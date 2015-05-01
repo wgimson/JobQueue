@@ -8,16 +8,33 @@ namespace JobQueueApp
 {
     public class JobProcessing
     {
-        private string[] _jobs = new string[16];
-        private int _startPos = 0;
-        private int _endPos = 0;
+        private string[] _jobs;
+        private int _resizeFactor;
+        private int _startPos;
+        private int _endPos;
+
+        public JobProcessing(int resizeFactor)
+        {
+            _resizeFactor = resizeFactor;
+            _startPos = 0;
+            _endPos = 0;
+            _jobs = new string[16];
+        }
+
+        public JobProcessing(int resizeFactor, int initLength)
+        {
+            _resizeFactor = resizeFactor;
+            _startPos = 0;
+            _endPos = 0;
+            _jobs = new string[initLength];
+        }
 
         public void AddJob(string jobName)
         {
             if (IsFull())
             {
-                DoubleArrySize();
-                _endPos = (_jobs.Length / 2);
+                IncreaseArrySize();
+                _endPos = (_jobs.Length / _resizeFactor);
             }
             _jobs[_endPos] = jobName;
             IncrementEndPos();
@@ -29,6 +46,11 @@ namespace JobQueueApp
             _jobs[_startPos] = null;
             IncrementStartPos();
             return nextJob;
+        }
+
+        public string Peek()
+        {
+            return _jobs[_startPos];
         }
 
         private int IncrementStartPos()
@@ -53,9 +75,9 @@ namespace JobQueueApp
             return (_startPos == _endPos && _jobs[_endPos + 1] == null) ? true : false;
         }
 
-        private void DoubleArrySize()
+        private void IncreaseArrySize()
         {
-            Array.Resize<string>(ref _jobs, (_jobs.Length * 2));
+            Array.Resize<string>(ref _jobs, (_jobs.Length * _resizeFactor));
         }
 
         public override string ToString()
@@ -67,14 +89,14 @@ namespace JobQueueApp
             {
                 for (var i = 0; i < _jobs.Length; i++)
                 {
-                    str.Append("Value at Postion: " + i + " is: " + _jobs[i] + "\n");
+                    str.Append("Value at Postion: " + i + " is: " + _jobs[i] + " Queue length is: " + _jobs.Length + "\n");
                 }
             }
             else
             {
-                for (var i = _startPos; i < _endPos; )
+                for (var i = _startPos; i != _endPos; )
                 {
-                    str.Append("Value at Postion: " + i + " is: " + _jobs[i] + "\n");
+                    str.Append("Value at Postion: " + i + " is: " + _jobs[i] + " Queue length is: " + _jobs.Length + "\n");
                     i = (++i % _jobs.Length);
                 }
             }

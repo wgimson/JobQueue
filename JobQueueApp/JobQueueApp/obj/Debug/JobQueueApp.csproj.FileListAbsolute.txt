@@ -7,3 +7,8 @@ C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.
 E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe.config
 E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.exe
 E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.pdb
+C:\OtherProjects\Console\JobQueueClone\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe.config
+C:\OtherProjects\Console\JobQueueClone\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe
+C:\OtherProjects\Console\JobQueueClone\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.pdb
+C:\OtherProjects\Console\JobQueueClone\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.exe
+C:\OtherProjects\Console\JobQueueClone\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.pdb
