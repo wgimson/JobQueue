@@ -1,0 +1,9 @@
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe.config
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.pdb
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.csprojResolveAssemblyReference.cache
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.exe
+C:\OtherProjects\Console\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.pdb
+E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\bin\Debug\JobQueueApp.exe.config
+E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.exe
+E:\VisualStudioProjects\Tutorials\DataStructures\JobQueue\JobQueueApp\JobQueueApp\obj\Debug\JobQueueApp.pdb
